@@ -10,6 +10,15 @@
 </head>
 
 <body>
+<div id="sideBar" class="close" style="width: 19.5vw;height: 100vh;background: yellow;display: flex;flex-direction: column;display: none;position: fixed;margin-top: 75px;">
+    <button style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;cursor: pointer;" onclick="closeSideBar()">close</button>
+    <a href="" style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;">link 1</a>
+    <a href="" style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;">link 2</a>
+    <a href="" style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;">link 3</a>
+    
+
+</div>
+
     <header class="header">
 
         <div class="name-web">
@@ -24,7 +33,7 @@
            <a href="login.html" style="display: flex;color: white;font-size: 18px;text-decoration: none;">Login</a>
         </div>
         <div class="menu-div">
-            <i class="menu fa-solid fa-bars"></i>
+            <i class="menu fa-solid fa-bars" onclick="openSideBar()"></i>
         </div>
     </header>
     <div class="body-web">
@@ -207,6 +216,28 @@
     <div style="display: flex; justify-content: center;">
         <button style="background-color: greenyellow;width: 140px;height: 50px;border-radius: 7px;">NEXT</button>
     </div>
+
+    <script>
+        function openSideBar(){
+            let sideBar=document.getElementById('sideBar');
+            const elementClass=sideBar.getAttribute("class");   
+             if(elementClass=="close"){
+                sideBar.removeAttribute("close");
+                sideBar.setAttribute('class','open');
+            sideBar.style.display="block";
+             }
+             if(elementClass=="open"){
+                sideBar.removeAttribute("open");
+                sideBar.setAttribute('class','close');
+            sideBar.style.display="none";
+             }
+            
+        }
+        function closeSideBar(){
+            let sideBar=document.getElementById('sideBar');
+            sideBar.style.display="none";
+        }
+    </script>
 
 </body>
 

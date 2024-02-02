@@ -58,6 +58,7 @@
     padding: 15px;
     border: 1px solid white;
     border-right: none;
+    cursor: pointer;
 }
 
 .menu {
