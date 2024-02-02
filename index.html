@@ -7,17 +7,47 @@
     <title>Movies</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .a {
+            border: 2px solid white;
+            width: 3vw;
+            margin: 2px;
+
+
+        }
+    </style>
 </head>
 
 <body>
-<div id="sideBar" class="close" style="width: 19.5vw;height: 100vh;background: yellow;display: flex;flex-direction: column;display: none;position: fixed;margin-top: 75px;">
-    <button style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;cursor: pointer;" onclick="closeSideBar()">close</button>
-    <a href="" style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;">link 1</a>
-    <a href="" style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;">link 2</a>
-    <a href="" style="color: white;font-size: 35px;text-decoration: none;background-color: black;width: fit-content;height: fit-content;margin: 20px;display: block;">link 3</a>
-    
+<!-- sideBar -->
 
-</div>
+    <div id="sideBar" class="close"
+        style="width: 40vw;height: 60vh;background: rgba(52, 49, 49, 0.824);flex-direction: column;display: block;position: absolute;top: 95px;right: 0px;">
+        <button
+            style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: flex;cursor: pointer;border: none;font-family: monospace;"
+            onclick="closeSideBar()"> <span>close</span> <span style="display: flex;flex-direction: column;"><span
+                    class="a"></span><span class="a"></span><span class="a"></span></span> </button>
+        <a href=""
+            style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: block;font-family: monospace;">profile</a>
+        <a href=""
+            style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: block;font-family: monospace;">wish
+            list</a>
+        <a href=""
+            style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: block;font-family: monospace;">favourite</a>
+        <a href=""
+            style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: block;font-family: monospace;">currently
+            airring</a>
+        <a href=""
+            style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: block;font-family: monospace;">most
+            watched</a>
+        <a href=""
+            style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: block;font-family: monospace;"></a>
+
+
+    </div>
+
+    <!-- navigation -->
 
     <header class="header">
 
@@ -25,29 +55,60 @@
             <p>MOVIE ZONE</p>
         </div>
 
-        <div class="cateogry">
+        <div class="cateogry menu-div" onclick="openCateogrySideBar()">
             <p>Cateogry</p>
         </div>
 
         <div class="login">
-           <a href="login.html" style="display: flex;color: white;font-size: 18px;text-decoration: none;">Login</a>
+            <a href="login.html" style="display: flex;color: white;font-size: 18px;text-decoration: none;">Login</a>
         </div>
         <div class="menu-div">
             <i class="menu fa-solid fa-bars" onclick="openSideBar()"></i>
         </div>
     </header>
     <div class="body-web">
-<!-- input,search -->
 
-<div style="background-color: red;display: flex;justify-content: space-between;height: fit-content;width: 90vw;">
-    <input type="text" placeholder="enter movie and show name" style="width: 100%;background-color: white;height: 40px;font-size: 20px;    font-family: monospace;
-    ">
-    <select name="" id="" style="color: white;width: 6%;height: 40px;">
-        <option value="movies">movies</option>
-        <option value="shows">shows</option>
-    </select>
-    <button style="height: 40px;color: white;background-color: rgb(0, 114, 25);font-size: 20px;">search</button>
+<!-- cateogry sideBar -->
+
+
+<div id="cateogrySideBar" class="close"
+style="width: 40vw;height: 60vh;background: rgba(52, 49, 49, 0.822);display: flex;flex-direction: column;display: none;position: absolute;left: 0px;">
+<button
+    style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: flex;cursor: pointer;border: none;font-family: monospace;"
+    onclick="closeCateogrySideBar()"> <span>close</span> <span style="display: flex;flex-direction: column;"><span
+            class="a"></span><span class="a"></span><span class="a"></span></span> </button>
+<a href=""
+    style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin-top: 20px;margin-bottom: 20px;margin-left: 10px ;display: block;font-family: monospace;">Bollywood</a>
+<a href=""
+    style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin-top: 20px;margin-bottom: 20px;margin-left: 10px ;display: block;font-family: monospace;">Hollywood</a>
+<a href=""
+    style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin-top: 20px;margin-bottom: 20px;margin-left: 10px ;display: block;font-family: monospace;">South Indian</a>
+<a href=""
+    style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin-top: 20px;margin-bottom: 20px;margin-left: 10px ;display: block;font-family: monospace;">Shows </a>
+<a href=""
+    style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin-top: 20px;margin-bottom: 20px;margin-left: 10px ;display: block;font-family: monospace;">Anime</a>
+<a href=""
+    style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin-top: 20px;margin-bottom: 20px;margin-left: 10px ;display: block;font-family: monospace;"></a>
+
+
 </div>
+
+
+
+
+
+        <!-- input,search -->
+
+        <div
+            style="background-color: red;display: flex;justify-content: space-between;height: fit-content;width: 90vw;">
+            <input type="text" placeholder="enter movie and show name" style="width: 100%;background-color: white;height: 40px;font-size: 20px;    font-family: monospace;
+    ">
+            <select name="" id="" style="color: white;width: 6%;height: 40px;">
+                <option value="movies">movies</option>
+                <option value="shows">shows</option>
+            </select>
+            <button style="height: 40px;color: white;background-color: rgb(0, 114, 25);font-size: 20px;">search</button>
+        </div>
         <div class="trending">TRENDING MOVIES </div>
     </div>
 
@@ -218,24 +279,43 @@
     </div>
 
     <script>
-        function openSideBar(){
-            let sideBar=document.getElementById('sideBar');
-            const elementClass=sideBar.getAttribute("class");   
-             if(elementClass=="close"){
+        function openSideBar() {
+            let sideBar = document.getElementById('sideBar');
+            let elementClass = sideBar.getAttribute("class");
+            if (elementClass == "close") {
                 sideBar.removeAttribute("close");
-                sideBar.setAttribute('class','open');
-            sideBar.style.display="block";
-             }
-             if(elementClass=="open"){
+                sideBar.setAttribute('class', 'open');
+                sideBar.style.display = "block";
+            }
+            if (elementClass == "open") {
                 sideBar.removeAttribute("open");
-                sideBar.setAttribute('class','close');
-            sideBar.style.display="none";
-             }
-            
+                sideBar.setAttribute('class', 'close');
+                sideBar.style.display = "none";
+            }
+
         }
-        function closeSideBar(){
-            let sideBar=document.getElementById('sideBar');
-            sideBar.style.display="none";
+        function closeSideBar() {
+            let sideBar = document.getElementById('sideBar');
+            sideBar.style.display = "none";
+        }
+        function openCateogrySideBar() {
+            let cateogrysideBar = document.getElementById('cateogrySideBar');
+            let elementClass = cateogrysideBar.getAttribute("class");
+            if (elementClass == "close") {
+                cateogrysideBar.removeAttribute("close");
+                cateogrysideBar.setAttribute('class', 'open');
+                cateogrysideBar.style.display = "block";
+            }
+            if (elementClass == "open") {
+                cateogrysideBar.removeAttribute("open");
+                cateogrysideBar.setAttribute('class', 'close');
+                cateogrysideBar.style.display = "none";
+            }
+
+        }
+        function closeCateogrySideBar() {
+            let cateogrysideBar = document.getElementById('cateogrySideBar');
+            cateogrysideBar.style.display = "none";
         }
     </script>
 
