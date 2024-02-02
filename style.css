@@ -163,3 +163,7 @@ width: fit-content;
     margin-top: 40px;
     margin-left: 20px;
 }
+.page:hover {
+    background-color: black;
+    cursor: pointer;
+  }

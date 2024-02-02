@@ -8,15 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        .a {
-            border: 2px solid white;
-            width: 3vw;
-            margin: 2px;
-
-
-        }
-    </style>
+  
 </head>
 
 <body>
@@ -26,8 +18,7 @@
         style="width: 40vw;height: 60vh;background: rgba(52, 49, 49, 0.824);flex-direction: column;display: none;position: absolute;top: 95px;right: 0px;">
         <button
             style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: flex;cursor: pointer;border: none;font-family: monospace;"
-            onclick="closeSideBar()"> <span>close</span> <span style="display: flex;flex-direction: column;"><span
-                    class="a"></span><span class="a"></span><span class="a"></span></span> </button>
+            onclick="closeSideBar()"><i class="fa-solid fa-xmark"></i></button>
         <a href=""
             style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px; margin-left: 10px;display: block;font-family: monospace;">profile</a>
         <a href=""
@@ -75,8 +66,7 @@
 style="width: 40vw;height: 60vh;background: rgba(52, 49, 49, 0.822);display: flex;flex-direction: column;display: none;position: absolute;left: 0px;">
 <button
     style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin: 20px;display: flex;cursor: pointer;border: none;font-family: monospace;"
-    onclick="closeCateogrySideBar()"> <span>close</span> <span style="display: flex;flex-direction: column;"><span
-            class="a"></span><span class="a"></span><span class="a"></span></span> </button>
+    onclick="closeCateogrySideBar()"> <i class="fa-solid fa-xmark"></i> </button>
 <a href=""
     style="color: white;font-size: 25px;text-decoration: none;background-color: transparent;width: fit-content;height: fit-content;margin-top: 20px;margin-bottom: 20px;margin-left: 10px ;display: block;font-family: monospace;">Bollywood</a>
 <a href=""
@@ -264,14 +254,14 @@ style="width: 40vw;height: 60vh;background: rgba(52, 49, 49, 0.822);display: fle
 
     </div>
     <div class="next-page" style="display: flex;justify-content: center;">
-        <div><button
-                style="background-color: white;border: none; width: 50px;height: 40px; margin: 30px;border-radius: 7px;">1</button>
+        <div class="page"><button
+                style="background-color:white;border: none; width: 50px;height: 40px; margin: 30px;border-radius: 7px;cursor: pointer;">1</button>
         </div>
-        <div><button
-                style="background-color: white;border: none; width: 50px;height: 40px; margin: 30px;border-radius: 7px;">2</button>
+        <div class="page"><button
+                style="background-color: white;border: none; width: 50px;height: 40px; margin: 30px;border-radius: 7px;cursor: pointer;">2</button>
         </div>
-        <div><button
-                style="background-color: white;border: none; width: 50px;height: 40px; margin: 30px;border-radius: 7px;">3</button>
+        <div class="page"><button
+                style="background-color: white;border: none; width: 50px;height: 40px; margin: 30px;border-radius: 7px;cursor: pointer;">3</button>
         </div>
     </div>
     <div style="display: flex; justify-content: center;">
@@ -317,6 +307,7 @@ style="width: 40vw;height: 60vh;background: rgba(52, 49, 49, 0.822);display: fle
             let cateogrysideBar = document.getElementById('cateogrySideBar');
             cateogrysideBar.style.display = "none";
         }
+     
     </script>
 
 </body>
